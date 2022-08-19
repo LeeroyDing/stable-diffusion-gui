@@ -239,9 +239,7 @@ def main():
     if opt.fixed_code:
         start_code = torch.randn([opt.n_samples, opt.C, opt.H // opt.f, opt.W // opt.f], device=device)
 
-    print("start code", start_code.abs().sum())
     precision_scope = autocast if opt.precision=="autocast" else nullcontext
-    precision_scope = nullcontext
     with torch.no_grad():
         with precision_scope("cuda"):
             with model.ema_scope():
