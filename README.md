@@ -1,6 +1,12 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/altryne/sd-webui-colab/blob/main/Stable_Diffusion_WebUi_Altryne.ipynb)
 
+<<<<<<< HEAD
 # [Installation](https://github.com/hlky/stable-diffusion/wiki/Installation)
+=======
+NOTE: I have submitted a merge request to move the changes in this repo to the [lstein fork of stable-diffusion](https://github.com/lstein/stable-diffusion/) because he has so many wonderful features in his fork! Another fork that I know that has up-to-date Mac Support and some really cool features is the [Birch-san stable-diffusion fork](https://github.com/Birch-san/stable-diffusion). If my pull request to lstein is accepted, I no longer plan on updating this fork with the latest changes!
+
+Several people have gotten Stable Diffusion to work on Apple Silicon Macs using Anaconda. I've gathered up most of their instructions and put them in this fork (and readme). I haven't tested anything besides Anaconda, and I've read about issues with things like miniforge, so if you have an issue that isn't dealt with in this fork then head on over to the [Apple Silicon](https://github.com/CompVis/stable-diffusion/issues/25) issue on GitHub (that page is so long that GitHub hides most of it by default, so you need to find the hidden part and expand it to view the whole thing). This fork would not have been possible without the work done by the people on that issue.
+>>>>>>> 8f73da1 (Added message about moving to lstein)
 
 ## [Development, testing, bleeding edge, maybe have bugs](https://github.com/hlky/stable-diffusion-webui)
 
@@ -117,8 +123,13 @@ For example, if you use `a busy city street in a modern city|illustration|cinema
 - `a busy city street in a modern city, cinematic lighting`
 - `a busy city street in a modern city, illustration, cinematic lighting`
 
+<<<<<<< HEAD
 Four images will be produced, in this order, all with same seed and each with corresponding prompt:
 ![](images/prompt-matrix.png)
+=======
+	conda activate ldm
+	pip install *name*
+>>>>>>> 8f73da1 (Added message about moving to lstein)
 
 Another example, this time with 5 prompts and 16 variations:
 ![](images/prompt_matrix.jpg)
